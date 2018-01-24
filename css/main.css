@@ -1,6 +1,10 @@
 /*************************************************
 *
 *   Espaço Hórus    -     Stylesheet
+*   Gray (lighter)  -     #ccc
+*   Gray            -     #aaa
+*   Gray (medium)   -     #333
+*   Gray (darker)   -     #212121
 *
 *************************************************/
 
@@ -8,16 +12,21 @@
 *   Base
 -------------------------------------------------*/
 
-body {
-
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 h1, h2, h3, h4 {
 
 }
 
-ul {
-
+ol, ul {
+  padding: 0;
+  list-style-type: none;
 }
 
 li {
@@ -33,6 +42,17 @@ a {
 }
 
 /*------------------------------------------------
+*   Navigation
+------------------------------------------------*/
+
+.navigation {
+  background-color: #212121;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+}
+
+/*------------------------------------------------
 *   Header
 ------------------------------------------------*/
 
@@ -41,39 +61,16 @@ a {
 }
 
 .header {
-  /* background: #000 url(../images/sky.png) no-repeat center top; */
+  align-items: center;
   background-color: #212121;
-  padding: 250px 0 250px;
+  display: flex;
+  height: 100vh;
 }
 
-/*------------------------------------------------
-*   Navigation
-------------------------------------------------*/
-
-.navigation {
-  /* background: #000 url(../images/sky.png) no-repeat center top; */
-  background-color: #212121;
-  border: 0;
-  border-radius: 0;
-  margin: 0;
-}
-
-/*------------------------------------------------
-*   Home
-------------------------------------------------*/
-
-.home {
-  background-color: #CCC;
-  padding: 100px 0;
-}
-
-.home-img {
-  width: 300px;
-  height: auto;
-}
-
-.home-text {
-  vertical-align: middle;
+.header p {
+  color: #fff;
+  font-size: 18px;
+  padding-top: 50px;
 }
 
 /*------------------------------------------------
@@ -81,17 +78,56 @@ a {
 ------------------------------------------------*/
 
 .about {
-  background-color: #AAA;
-  padding: 50px 0;
+  background-color: #ccc;
+  padding: 60px 0;
 }
 
 .about img {
-  width: 250px;
-  height: auto;
   align-items: center;
+  display: inline-block;
+  height: auto;
+  padding-top: 20px;
+  width: 250px;
 }
 
+.about p {
+  padding: 20px 0 20px 0;
+}
 
+/*------------------------------------------------
+*   Services
+------------------------------------------------*/
+
+.services {
+  background-color: #bbb;
+  padding: 60px 0;
+}
+
+.services h2, .works h2, .location h2 {
+  padding-bottom: 20px;
+}
+
+.services li {
+  border-bottom: 1px solid #333;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+/*------------------------------------------------
+*   works
+------------------------------------------------*/
+
+.works {
+  align-items: center;
+  background-color: #999;
+  padding: 50px 0 50px 0;
+}
+
+.carousel {
+   max-height: 500px;
+   max-width: 500px;
+   overflow: hidden;
+}
 
 /*------------------------------------------------
 *   Location
@@ -99,13 +135,8 @@ a {
 
 .location {
   align-items: center;
-  background-color: #333;
-  padding: 100px 0 100px;
-}
-
-.map {
-  height: 300px;
-  width: 300px;
+  background-color: #888;
+  padding: 50px 0 70px 0;
 }
 
 /*------------------------------------------------
@@ -113,5 +144,6 @@ a {
 ------------------------------------------------*/
 
 .footer {
-  background-color: #212121
+  background-color: #212121;
+  padding-top: 20px;
 }
