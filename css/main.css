@@ -18,6 +18,10 @@ html, body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 h1, h2, h3, h4 {
@@ -67,9 +71,8 @@ a {
   height: 100vh;
 }
 
-.header p {
-  color: #fff;
-  font-size: 18px;
+.header h3 {
+  color: #888;
   padding-top: 50px;
 }
 
@@ -91,7 +94,11 @@ a {
 }
 
 .about p {
-  padding: 20px 0 20px 0;
+  padding-bottom: 20px;
+}
+
+.about h2, .services h2, .works h2, .location h2 {
+  padding-bottom: 20px;
 }
 
 /*------------------------------------------------
@@ -101,10 +108,6 @@ a {
 .services {
   background-color: #bbb;
   padding: 60px 0;
-}
-
-.services h2, .works h2, .location h2 {
-  padding-bottom: 20px;
 }
 
 .services li {
@@ -120,13 +123,37 @@ a {
 .works {
   align-items: center;
   background-color: #999;
-  padding: 50px 0 50px 0;
+  padding: 50px 0 80px 0;
 }
 
 .carousel {
-   max-height: 500px;
-   max-width: 500px;
-   overflow: hidden;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.carousel div {
+  padding: 0;
+}
+
+.item.row {
+  display: table;
+}
+
+.left-div {
+  display: table-cell;
+  float: none;
+}
+
+.right-div {
+  background-color: #212121;
+  color: #fff;
+  display: table-cell;
+  float: none;
+}
+
+.carousel img {
+  height: auto;
+  width: 100%;
 }
 
 /*------------------------------------------------
@@ -136,7 +163,7 @@ a {
 .location {
   align-items: center;
   background-color: #888;
-  padding: 50px 0 70px 0;
+  padding: 60px 0 80px 0;
 }
 
 /*------------------------------------------------
