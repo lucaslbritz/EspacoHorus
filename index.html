@@ -9,14 +9,14 @@
 
     <title>Espaço Hórus</title>
 
+    <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
   </head>
 
   <body id="page-top">
     <!-- Navigation -->
-    <!-- <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark navbar-fixed-top"> -->
     <nav id="mainNav" class="navigation navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -27,18 +27,21 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand js-scroll-trigger" href="#page-top">Espaço Hórus</a>
+          <a class="brand scroll-to-top navbar-brand js-scroll-trigger" href="#page-top">Espaço Hórus</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right ml-auto">
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">Quem somos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#services">Nossos serviços</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item hidden-xs">
               <a class="nav-link js-scroll-trigger" href="#works">Alguns trabalhos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#location">Onde atendemos</a>
@@ -88,62 +91,139 @@
 
       <!-- Services -->
       <section id="services" class="services">
-        <div class="container container-fuid">
-          <div class="row">
-            <div class="col-xs-10 col-xs-offset-1">
-              <h2>Nossos serviços...</h2>
-            </div>
-            <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1 text-center">
-              <ul>
-                <li>
-                  <h4>Opção 1</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque magna, convallis non magna sit.</p>
-                </li>
-                <li>
-                  <h4>Opção 2</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque magna, convallis non magna sit.</p>
-                </li>
-                <li>
-                  <h4>Opção 3</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque magna, convallis non magna sit.</p>
-                </li>
-                <li>
-                  <h4>Opção 4</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque magna, convallis non magna sit.</p>
-                </li>
-              </ul>
-            </div>
-            <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-2 text-center">
-              <ul>
-                <li>
-                  <h4>Opção 1</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque magna, convallis non magna sit.</p>
-                </li>
-                <li>
-                  <h4>Opção 2</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque magna, convallis non magna sit.</p>
-                </li>
-                <li>
-                  <h4>Opção 3</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque magna, convallis non magna sit.</p>
-                </li>
-                <li>
-                  <h4>Opção 4</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque magna, convallis non magna sit.</p>
-                </li>
-              </ul>
+        <div class="container container-fluid">
+          <div class="jumbotron">
+            <div class="row">
+              <div class="col-xs-10 col-xs-offset-1">
+                <h2>Confira as nossas opções de serviços...</h2>
+              </div>
+              <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1">
+                <h3>Especialista em Sobrancelhas</h3>
+                <ul>
+                  <li>
+                    <div class="row services-row">
+                      <div class="col-xs-11 services-item">
+                        <h4>Design de sobrancelhas</h4>
+                      </div>
+                      <div class="col-xs-1 services-item">
+                        <span class="icon glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                      </div>
+                    </div>
+                    <p class="services-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus nunc massa, eu interdum neque tristique vitae. Donec a tristique.</p>
+                  </li>
+                  <li>
+                    <div class="row services-row">
+                      <div class="col-xs-11 services-item">
+                        <h4>Design e henna</h4>
+                      </div>
+                      <div class="col-xs-1 services-item">
+                        <span class="icon glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                      </div>
+                    </div>
+                    <p class="services-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus nunc massa, eu interdum neque tristique vitae. Donec a tristique.</p>
+                  </li>
+                  <li>
+                    <div class="row services-row">
+                      <div class="col-xs-11 services-item">
+                        <h4>Microblading (fio a fio)</h4>
+                      </div>
+                      <div class="col-xs-1 services-item">
+                        <span class="icon glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                      </div>
+                    </div>
+                    <p class="services-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus nunc massa, eu interdum neque tristique vitae. Donec a tristique.</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-2">
+                <h3>Massoterapeuta</h3>
+                <ul>
+                  <li>
+                    <div class="row services-row">
+                      <div class="col-xs-11 services-item">
+                        <h4>Reflexo podal</h4>
+                      </div>
+                      <div class="col-xs-1 services-item">
+                        <span class="icon glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                      </div>
+                    </div>
+                    <p class="services-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus nunc massa, eu interdum neque tristique vitae. Donec a tristique.</p>
+                  </li>
+                  <li>
+                    <div class="row services-row">
+                      <div class="col-xs-11 services-item">
+                        <h4>Drenagem linfática</h4>
+                      </div>
+                      <div class="col-xs-1 services-item">
+                        <span class="icon glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                      </div>
+                    </div>
+                    <p class="services-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus nunc massa, eu interdum neque tristique vitae. Donec a tristique.</p>
+                  </li>
+                  <li>
+                    <div class="row services-row">
+                      <div class="col-xs-11 services-item">
+                        <h4>Esfoliação corporal</h4>
+                      </div>
+                      <div class="col-xs-1 services-item">
+                        <span class="icon glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                      </div>
+                    </div>
+                    <p class="services-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus nunc massa, eu interdum neque tristique vitae. Donec a tristique.</p>
+                  </li>
+                  <li>
+                    <div class="row services-row">
+                      <div class="col-xs-11 services-item">
+                        <h4>Massagem modeladora</h4>
+                      </div>
+                      <div class="col-xs-1 services-item">
+                        <span class="icon glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                      </div>
+                    </div>
+                    <p class="services-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus nunc massa, eu interdum neque tristique vitae. Donec a tristique.</p>
+                  </li>
+                  <li>
+                    <div class="row services-row">
+                      <div class="col-xs-11 services-item">
+                        <h4>Massagem para gestante</h4>
+                      </div>
+                      <div class="col-xs-1 services-item">
+                        <span class="icon glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                      </div>
+                    </div>
+                    <p class="services-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus nunc massa, eu interdum neque tristique vitae. Donec a tristique.</p>
+                  </li>
+                  <li>
+                    <div class="row services-row">
+                      <div class="col-xs-11 services-item">
+                        <h4>Equilibro dos chakras com uso das pedras</h4>
+                      </div>
+                      <div class="col-xs-1 services-item">
+                        <span class="icon glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                      </div>
+                    </div>
+                    <p class="services-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus nunc massa, eu interdum neque tristique vitae. Donec a tristique.</p>
+                  </li>
+                  <li>
+                    <div class="row services-row">
+                      <div class="col-xs-11 services-item">
+                        <h4>Massagem relaxante com sementes e pedras quentes</h4>
+                      </div>
+                      <div class="col-xs-1 services-item">
+                        <span class="icon glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                      </div>
+                    </div>
+                    <p class="services-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus nunc massa, eu interdum neque tristique vitae. Donec a tristique.</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!--  -->
-      <section>
-
-      </section>
-
       <!-- Works -->
-      <section id="works" class="works">
+      <section id="works" class="works hidden-xs">
         <div class="container container-fluid">
           <div class="row">
             <div class="col-xs-10 col-xs-offset-1">
@@ -166,7 +246,10 @@
                       <img src="images/example-1.jpg" alt="exemplo-1">
                     </div>
                     <div class="right-div col-xs-6">
-                      <p>Descrição...</p>
+                      <blockquote>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus nunc massa, eu interdum neque tristique vitae. Donec a tristique.
+                        <cite>Fulana de Tal</cite>
+                      </blockquote>
                     </div>
                   </div>
                 </div>
@@ -176,7 +259,10 @@
                       <img src="images/example-2.jpg" alt="exemplo-2">
                     </div>
                     <div class="right-div col-xs-6">
-                      <p>Descrição...</p>
+                      <blockquote>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus nunc massa, eu interdum neque tristique vitae. Donec a tristique.
+                        <cite>Fulana de Tal</cite>
+                      </blockquote>
                     </div>
                   </div>
                 </div>
@@ -186,7 +272,10 @@
                       <img src="images/example-3.jpg" alt="exemplo-3">
                     </div>
                     <div class="right-div col-xs-6">
-                      <p>Descrição...</p>
+                      <blockquote>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus nunc massa, eu interdum neque tristique vitae. Donec a tristique.
+                        <cite>Fulana de Tal</cite>
+                      </blockquote>
                     </div>
                   </div>
                 </div>
@@ -196,7 +285,10 @@
                       <img src="images/example-4.jpg" alt="exemplo-4">
                     </div>
                     <div class="right-div col-xs-6">
-                      <p>Descrição...</p>
+                      <blockquote>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus nunc massa, eu interdum neque tristique vitae. Donec a tristique.
+                        <cite>Fulana de Tal</cite>
+                      </blockquote>
                     </div>
                   </div>
                 </div>
@@ -212,6 +304,35 @@
                 <span class="sr-only">Next</span>
               </a>
             </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="contact ">
+        <div class="container container-fluid">
+          <div class="jumbotron">
+            <div class="contact-list row">
+              <div class="col-xs-10 col-xs-offset-1">
+                <h2>Contato...</h2>
+              </div>
+              <div class="col-xs-10 col-xs-offset-1 text-center">
+                <h3 class="contact-subtitle">Ligue hoje mesmo para marcar o seu horário</h3>
+              </div>
+              <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1 text-center">
+                <h3>Mylena Lima</h3>
+                <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                <p>Telefone ou WhatsApp</p>
+                <h4><strong>(51) 99999-9999</strong></h4>
+              </div>
+              <div class="contact-item col-sm-1 hidden-xs"></div>
+              <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-2 text-center">
+                <h3>Graziela Passos</h3>
+                <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                <p>Telefone ou WhatsApp</p>
+                <h4><strong>(51) 99999-9999</strong></h4>
+              </div>
             </div>
           </div>
         </div>
@@ -244,6 +365,13 @@
         </div>
       </div>
     </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
