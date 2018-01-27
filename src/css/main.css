@@ -50,7 +50,7 @@ a {
 ------------------------------------------------*/
 
 .navigation {
-  background-color: #212121;
+  background-color: #252525;
   border: 0;
   border-radius: 0;
   margin: 0;
@@ -64,9 +64,20 @@ a {
   display: inline-block;
 }
 
+.brand {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+}
+
+.active-brand {
+  opacity: 1;
+  visibility: visible;
+}
+
 .header {
   align-items: center;
-  background-color: #212121;
+  background-color: #252525;
   display: flex;
   height: 100vh;
 }
@@ -97,7 +108,7 @@ a {
   padding-bottom: 20px;
 }
 
-.about h2, .services h2, .works h2, .location h2 {
+.about h2, .services h2, .works h2, .contact h2, .location h2 {
   padding-bottom: 20px;
 }
 
@@ -110,10 +121,52 @@ a {
   padding: 60px 0;
 }
 
+.services h3 {
+  padding-bottom: 30px;
+}
+
 .services li {
   border-bottom: 1px solid #333;
   margin-bottom: 20px;
   padding-bottom: 10px;
+}
+
+.services ul li:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
+.services-row {
+  cursor: pointer;
+  display: table;
+  vertical-align: middle;
+}
+
+.services-item {
+  display: table-cell;
+  float: none;
+}
+
+.jumbotron p {
+  font-size: 16px;
+}
+
+.services-description {
+  display: none;
+}
+
+.icon {
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.icon.clicked {
+  -ms-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 /*------------------------------------------------
@@ -149,11 +202,82 @@ a {
   color: #fff;
   display: table-cell;
   float: none;
+  vertical-align: middle;
 }
 
 .carousel img {
   height: auto;
   width: 100%;
+}
+
+.carousel blockquote {
+  border: 0;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: lighter;
+  padding: 30px;
+  position: relative;
+}
+
+.carousel blockquote:before {
+  color: #7a7a7a;
+  content: '\201C';
+  display: block;
+  font-size: 80px;
+  left: 20px;
+  position: absolute;
+  top: -10px;
+}
+
+.carousel blockquote cite {
+    color: #999999;
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.carousel blockquote cite:before {
+    content: "\2014 \2009";
+}
+
+/*------------------------------------------------
+*   Contact
+------------------------------------------------*/
+
+.contact {
+  align-items: center;
+  background-color: #888;
+  padding: 100px 0 100px 0;
+}
+
+.contact p {
+  font-size: 18px;
+}
+
+.contact h3 {
+  padding-bottom: 20px;
+}
+
+.contact h4 {
+  padding-bottom: 20px;
+}
+
+.contact-subtitle {
+  padding-bottom: 50px;
+}
+
+.contact-list {
+  overflow: hidden;
+}
+
+.contact-item {
+  border-right: #000 solid 1px;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+.glyphicon.glyphicon-earphone {
+  font-size: 24px;
 }
 
 /*------------------------------------------------
@@ -162,7 +286,7 @@ a {
 
 .location {
   align-items: center;
-  background-color: #888;
+  background-color: #777;
   padding: 60px 0 80px 0;
 }
 
@@ -171,6 +295,6 @@ a {
 ------------------------------------------------*/
 
 .footer {
-  background-color: #212121;
+  background-color: #252525;
   padding-top: 20px;
 }

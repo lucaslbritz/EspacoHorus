@@ -1,5 +1,13 @@
-(function($) {
-  "use strict"; // Start of use strict
+$(window).on('load', function() {
+  $('.nav-item.active').removeClass('active');
+});
+
+$(document).ready(function() {
+  $('.services-row').on('click', function(event) {
+    $(this).closest('li').find('.icon').toggleClass('clicked');
+    $(this).closest('li').find('.services-description').fadeToggle('slow');
+  })
+
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
@@ -15,6 +23,18 @@
     }
   });
 
+  // Scroll to top button appear
+  $(document).scroll(function() {
+    var scrollDistance = $(this).scrollTop();
+    if (scrollDistance > 200) {
+      $('.scroll-to-top').fadeIn();
+      $('.brand').addClass('active-brand');
+    } else {
+      $('.scroll-to-top').fadeOut();
+      $('.brand').removeClass('active-brand');
+    }
+  });
+
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
@@ -23,7 +43,6 @@
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
-    offset: 100
+    offset: 50
   });
-
-})(jQuery); // End of use strict
+});
