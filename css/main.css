@@ -323,6 +323,8 @@ a {
   transition: all 0.1s
 }
 
+.contact-horus a:active,
+.contact-horus a:focus,
 .contact-horus a:hover {
   color: #23527c;
   font-weight: bold;
