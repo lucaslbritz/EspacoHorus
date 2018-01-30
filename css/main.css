@@ -108,7 +108,12 @@ a {
   padding-bottom: 20px;
 }
 
-.about h2, .services h2, .feedbacks h2, .contact h2, .location h2 {
+.about h2,
+.services h2,
+.tattoo h2,
+.feedbacks h2,
+.contact h2,
+.location h2 {
   padding-bottom: 20px;
 }
 
@@ -117,7 +122,7 @@ a {
 ------------------------------------------------*/
 
 .services {
-  background-color: #bbb;
+  background-color: #c5c5c5;
   padding: 60px 0;
 }
 
@@ -141,6 +146,10 @@ a {
   cursor: pointer;
   display: table;
   vertical-align: middle;
+}
+
+.services-subtitle {
+  font-size: 18px !important;
 }
 
 .services-item {
@@ -170,12 +179,37 @@ a {
 }
 
 /*------------------------------------------------
+*   Tattoo
+------------------------------------------------*/
+
+.tattoo {
+  background-color: #bbb;
+  padding: 50px 0 80px 0;
+}
+
+.tattoo-banner {
+  width: 100%;
+}
+
+.tattoo-subtitle {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.tattoo-subtitle a,
+.tattoo-subtitle a:active,
+.tattoo-subtitle a:focus,
+.tattoo-subtitle a:hover {
+  text-decoration: none;
+}
+
+/*------------------------------------------------
 *   Feedbacks
 ------------------------------------------------*/
 
 .feedbacks {
   align-items: center;
-  background-color: #999;
+  background-color: #b5b5b5;
   padding: 50px 0 80px 0;
 }
 
@@ -246,7 +280,7 @@ a {
 
 .contact {
   align-items: center;
-  background-color: #888;
+  background-color: #aaa;
   padding: 60px 0;
 }
 
@@ -268,6 +302,10 @@ a {
   padding-bottom: 30px;
 }
 
+.contact-hour {
+  padding-bottom: 20px;
+}
+
 .contact-list {
   overflow: hidden;
 }
@@ -280,6 +318,19 @@ a {
 
 .glyphicon.glyphicon-earphone {
   font-size: 24px;
+}
+
+.contact-phone {
+  color: #000;
+  text-decoration: none;
+}
+
+.contact-phone:active,
+.contact-phone:focus,
+.contact-phone:hover {
+  color: #000;
+  cursor: default;
+  text-decoration: none;
 }
 
 .contact-email {
@@ -337,16 +388,12 @@ a {
 
 .location {
   align-items: center;
-  background-color: #777;
+  background-color: #a5a5a5;
   padding: 60px 0 80px 0;
 }
 
-.location-left {
-  padding: 20px 10px 20px 0;
-}
-
-.location-right {
-  padding: 20px 0 20px 10px;
+.location iframe {
+  padding: 20px 0;
 }
 
 /*------------------------------------------------
