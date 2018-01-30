@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <meta name="description" content="Website to disclose the Espaço Hórus business.">
     <meta name="author" content="Lucas Britz (https://github.com/lucaslbritz)">
 
@@ -36,7 +37,10 @@
               <a class="nav-link js-scroll-trigger" href="#about">Quem somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Nossos serviços</a>
+              <a class="nav-link js-scroll-trigger" href="#services">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#tattoo">Tattoo</a>
             </li>
             <li class="nav-item hidden-xs">
               <a class="nav-link js-scroll-trigger" href="#feedbacks">Opiniões</a>
@@ -45,7 +49,7 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#location">Onde atendemos</a>
+              <a class="nav-link js-scroll-trigger" href="#location">Localização</a>
             </li>
           </ul>
         </div>
@@ -96,7 +100,8 @@
           <div class="jumbotron">
             <div class="row">
               <div class="col-xs-10 col-xs-offset-1">
-                <h2>Confira as nossas opções de serviços...</h2>
+                <h2>Serviços...</h2>
+                <p class="services-subtitle">Confira as nossas opções de serviços e decubra o que é melhor para você!</p>
               </div>
               <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1">
                 <h3>Especialista em Sobrancelhas</h3>
@@ -223,6 +228,21 @@
         </div>
       </section>
 
+      <!-- Tattoo -->
+      <section id="tattoo" class="tattoo">
+        <div class="container container-fluid">
+          <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+              <h2>Tattoo...</h2>
+              <p class="tattoo-subtitle">O Espaço Hórus conta com a presença da premiada tatuadora <a href="https://www.facebook.com/profile.php?id=100010819532079"><strong>Tita Herberts</strong></a> alguns dias específicos. Curta a nossa página no <a href="https://www.facebook.com/contato.espacohorus">Facebook</a> para saber os dias em que ela estará atendendo no nosso espaço!</p>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1">
+              <img class="tattoo-banner img-responsive" src="images/tita.png" alt="tita-herberts">
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Feedbacks -->
       <section id="feedbacks" class="feedbacks hidden-xs">
         <div class="container container-fluid">
@@ -318,14 +338,13 @@
               <div class="col-xs-10 col-xs-offset-1">
                 <h2>Contato...</h2>
               </div>
-              <div class="col-xs-10 col-xs-offset-1 text-center">
-                <h3 class="contact-subtitle">Ligue hoje mesmo para marcar o seu horário</h3>
-              </div>
               <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1 text-center">
                 <h3 class="contact-name">Mylena Lima</h3>
+                <p class="contact-hour">Segunda à sexta das 14h as 20:30h. Sábado das 9h as 12:30h.</p>
                 <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
                 <p>Telefone ou WhatsApp</p>
-                <h4><strong>(51) 99999-9999</strong></h4>
+                <a class="contact-phone visible-xs" href="tel:+5551996062738"><h4><strong>(51) 99606-2738</strong></h4></a>
+                <h4 class="contact-phone hidden-xs"><strong>(51) 99606-2738</strong></h4>
 
                 <div class="row">
                   <a class="contact-email" href="mailto:mylenalima@gmail.com?subject=Agendar%20Horário">
@@ -343,9 +362,11 @@
               <div class="contact-item col-sm-1 hidden-xs"></div>
               <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-2 text-center">
                 <h3 class="contact-name">Graziela Passos</h3>
+                <p class="contact-hour">Segunda à sexta das 13h as 19h.</p>
                 <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
                 <p>Telefone ou WhatsApp</p>
-                <h4><strong>(51) 99999-9999</strong></h4>
+                <a class="contact-phone visible-xs" href="tel:+5551998751256"><h4><strong>(51) 99875-1256</strong></h4></a>
+                <h4 class="contact-phone hidden-xs"><strong>(51) 99875-1256</strong></h4>
 
                 <div class="row">
                   <a class="contact-email" href="mailto:mylenalima@gmail.com?subject=Agendar%20Horário">
@@ -373,17 +394,17 @@
         <div class="container container-fluid">
           <div class="row">
             <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-0">
-              <h2>Onde atendemos...</h2>
+              <h2>Localização...</h2>
               <p>Avenida Brasil, n&deg; 50, Sala 304 - Portão/RS - Acesso pelo lado da Banca Brasil</p>
             </div>
             <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 text-center">
               <div class="embed-responsive embed-responsive-4by3">
-                <iframe class="location-left" class="embed-responsive-item" src="https://www.google.com/maps/embed/v1/place?q=place_id:EjtBdi4gQnJhc2lsLCA1MCAtIFZpbGEgUmljYSwgUG9ydMOjbyAtIFJTLCA5MzE4MC0wMDAsIEJyYXNpbA&key=AIzaSyBesqXfayeWRWayEVmzCuHYpzI0z7dAVss" allowfullscreen></iframe>
+                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed/v1/place?q=place_id:EjtBdi4gQnJhc2lsLCA1MCAtIFZpbGEgUmljYSwgUG9ydMOjbyAtIFJTLCA5MzE4MC0wMDAsIEJyYXNpbA&key=AIzaSyBesqXfayeWRWayEVmzCuHYpzI0z7dAVss" allowfullscreen></iframe>
               </div>
             </div>
             <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 text-center">
               <div class="embed-responsive embed-responsive-4by3">
-                <iframe class="location-right" src="https://www.google.com/maps/embed/v1/streetview?key=AIzaSyBesqXfayeWRWayEVmzCuHYpzI0z7dAVss&location=-29.6934115,-51.2310728&heading=318&pitch=10&fov=60" allowfullscreen></iframe>
+                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed/v1/streetview?key=AIzaSyBesqXfayeWRWayEVmzCuHYpzI0z7dAVss&location=-29.6934115,-51.2310728&heading=318&pitch=10&fov=60" allowfullscreen></iframe>
               </div>
             </div>
           </div>
