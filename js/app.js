@@ -5,7 +5,7 @@ $(window).on('load', function() {
 $(document).ready(function() {
   $('.services-row').on('click', function(event) {
     $(this).closest('li').find('.icon').toggleClass('clicked');
-    $(this).closest('li').find('.services-description').fadeToggle('slow');
+    $(this).closest('li').find('.services-description').fadeToggle('fast');
   })
 
 
