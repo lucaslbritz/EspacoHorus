@@ -3,11 +3,23 @@ $(window).on('load', function() {
 });
 
 $(document).ready(function() {
+
   $('.services-row').on('click', function(event) {
     $(this).closest('li').find('.icon').toggleClass('clicked');
     $(this).closest('li').find('.services-description').fadeToggle('fast');
   })
 
+  $('.services-expand-all').on('click', function(event) {
+    if ($(this).closest('.row').find('p').text() === 'Expandir tudo') {
+      $(this).closest('.row').find('p').text('Recolher tudo');
+      $(this).closest('ul').find('.icon').addClass('clicked');
+      $(this).closest('ul').find('.services-description').fadeIn('fast');
+    } else {
+      $(this).closest('.row').find('p').text('Expandir tudo');
+      $(this).closest('ul').find('.icon.clicked').removeClass('clicked');
+      $(this).closest('ul').find('.services-description').fadeOut('fast');
+    }
+  })
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
