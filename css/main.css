@@ -136,7 +136,8 @@ a {
   padding-bottom: 10px;
 }
 
-.services ul li:last-child {
+.services ul li:last-child,
+.services ul li:first-child {
   border-bottom: 0;
   margin-bottom: 0;
   padding-bottom: 20px;
@@ -155,6 +156,21 @@ a {
 .services-item {
   display: table-cell;
   float: none;
+}
+
+.services-expand-all {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.services-expand-all p {
+  margin: 0;
+  padding: 0;
+}
+
+.services-expand-all .icon {
+  margin-left: 10px;
 }
 
 .jumbotron p {
