@@ -7,18 +7,17 @@ $(document).ready(function() {
   $('.services-row').on('click', function(event) {
     $(this).closest('li').find('.icon').toggleClass('clicked');
     $(this).closest('li').find('.services-description').fadeToggle('fast');
+    if ($(this).closest('ul').find('.icon.clicked').length > 1) {
+      $(this).closest('ul').find('.services-close-option').fadeIn('fast');
+    } else {
+      $(this).closest('ul').find('.services-close-option').fadeOut('fast');
+    }
   })
 
-  $('.services-expand-all').on('click', function(event) {
-    if ($(this).closest('.row').find('p').text() === 'Expandir tudo') {
-      $(this).closest('.row').find('p').text('Recolher tudo');
-      $(this).closest('ul').find('.icon').addClass('clicked');
-      $(this).closest('ul').find('.services-description').fadeIn('fast');
-    } else {
-      $(this).closest('.row').find('p').text('Expandir tudo');
-      $(this).closest('ul').find('.icon.clicked').removeClass('clicked');
-      $(this).closest('ul').find('.services-description').fadeOut('fast');
-    }
+  $('.services-close-all').on('click', function(event) {
+    $(this).closest('ul').find('.icon.clicked').removeClass('clicked');
+    $(this).closest('ul').find('.services-description').fadeOut('fast');
+    $(this).closest('ul').find('.services-close-option').fadeOut('fast');
   })
 
   // Smooth scrolling using jQuery easing
