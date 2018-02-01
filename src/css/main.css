@@ -158,18 +158,22 @@ a {
   float: none;
 }
 
-.services-expand-all {
+.services-close-option {
+  display: none;
+}
+
+.services-close-all {
   cursor: pointer;
   display: inline-block;
   vertical-align: middle;
 }
 
-.services-expand-all p {
+.services-close-all p {
   margin: 0;
   padding: 0;
 }
 
-.services-expand-all .icon {
+.services-close-all .icon {
   margin-left: 10px;
 }
 
