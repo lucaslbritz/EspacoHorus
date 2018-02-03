@@ -1,23 +1,23 @@
 //--------------------------------------------------
 //  Remove initial active class from navigation
 //--------------------------------------------------
-
 $(window).on('load', function() {
   $('.nav-item.active').removeClass('active');
 });
 
 //--------------------------------------------------
+//  Start bootstrap tooltip just if it's not a touchable device
+//--------------------------------------------------
+$(function () {
+  if (!('ontouchstart' in window)) {
+    $('[data-toggle="tooltip"]').tooltip();
+  }
+})
+
+//--------------------------------------------------
 //  Document ready
 //--------------------------------------------------
-
 $(document).ready(function() {
-
-  // Start bootstrap tooltip just if it's not a touchable device
-  $(function () {
-    if (!('ontouchstart' in window)) {
-      $('[data-toggle="tooltip"]').tooltip();
-    }
-  })
 
   // Add function when click on expand/close service description
   $('.services-row').on('click', function(event) {
