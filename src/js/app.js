@@ -10,8 +10,14 @@ $(window).on('load', function() {
 //  Start bootstrap tooltip
 //--------------------------------------------------
 
+function isTouchDevice() {
+  return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
+}
+
 $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+  if (isTouchDevice() === false) {
+    $('[data-toggle="tooltip"]').tooltip();
+  }
 })
 
 //--------------------------------------------------
