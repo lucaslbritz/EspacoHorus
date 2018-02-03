@@ -7,24 +7,21 @@ $(window).on('load', function() {
 });
 
 //--------------------------------------------------
-//  Start bootstrap tooltip
-//--------------------------------------------------
-
-function isTouchDevice() {
-  return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
-}
-
-$(function () {
-  if (isTouchDevice() === false) {
-    $('[data-toggle="tooltip"]').tooltip();
-  }
-})
-
-//--------------------------------------------------
 //  Document ready
 //--------------------------------------------------
 
 $(document).ready(function() {
+
+  function isTouchDevice() {
+    return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
+  }
+
+  // Start bootstrap tooltip just if it's not a touchable device
+  $(function () {
+    if (isTouchDevice() === false) {
+      $('[data-toggle="tooltip"]').tooltip();
+    }
+  })
 
   // Add function when click on expand/close service description
   $('.services-row').on('click', function(event) {
