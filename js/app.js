@@ -10,29 +10,10 @@ $(window).on('load', function() {
 //--------------------------------------------------
 $(document).ready(function() {
 
-  // Start bootstrap tooltip just if it's not a touchable device
-  $(function () {
-    if ($(window).width() < 750) {
-      $('a').tooltip('destroy');
-      $('i').tooltip('destroy');
-    } else {
-      $('[data-toggle="tooltip"]').tooltip();
-    }
-  })
-
   // Add function when click on expand/close service description
   $('.services-row').on('click', function(event) {
     $(this).closest('li').find('.icon').toggleClass('clicked');
     $(this).closest('li').find('.services-description').fadeToggle('fast');
-
-    // Change message of description tooltip
-    if ($(this).closest('.services-row').find('.icon').tooltip().attr('data-original-title') === 'Ver descrição') {
-      $(this).closest('.services-row').find('.icon').tooltip().attr('data-original-title', 'Fechar descrição')
-             .tooltip('fixTitle').tooltip('show');
-    } else {
-      $(this).closest('.services-row').find('.icon').tooltip().attr('data-original-title', 'Ver descrição')
-             .tooltip('fixTitle').tooltip('show');
-    }
 
     // Turn visible and invisible "close all" service option
     if ($(this).closest('ul').find('.icon.clicked').length > 1) {
@@ -47,7 +28,6 @@ $(document).ready(function() {
     $(this).closest('ul').find('.icon.clicked').removeClass('clicked');
     $(this).closest('ul').find('.services-description').fadeOut('fast');
     $(this).closest('ul').find('.services-close-option').fadeOut('fast');
-    $(this).closest('ul').find('.services-row').find('.icon').tooltip().attr('data-original-title', 'Ver descrição').tooltip('fixTitle');
   })
 
   // Smooth scrolling using jQuery easing
