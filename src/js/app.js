@@ -12,13 +12,9 @@ $(window).on('load', function() {
 
 $(document).ready(function() {
 
-  function isTouchDevice() {
-    return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
-  }
-
   // Start bootstrap tooltip just if it's not a touchable device
   $(function () {
-    if (isTouchDevice() === false) {
+    if (!('ontouchstart' in window)) {
       $('[data-toggle="tooltip"]').tooltip();
     }
   })
