@@ -100,7 +100,12 @@ ol, ul {
   padding-bottom: 20px;
 }
 
-.about > .services > .tattoo > .feedbacks > .contact > .location + h2 {
+.about h2,
+.services h2,
+.tattoo h2,
+.feedbacks h2,
+.contact h2,
+.location h2 {
   padding-bottom: 20px;
 }
 
@@ -419,7 +424,7 @@ ol, ul {
   transform: none;
 }
 
-.footer + .contact-email:active,
+.footer .contact-email:active,
 .footer .contact-email:focus,
 .footer .contact-email:hover {
   color: #fff;
