@@ -6,21 +6,19 @@ $(window).on('load', function() {
 });
 
 //--------------------------------------------------
-//  Start bootstrap tooltip just if it's not a touchable device
-//--------------------------------------------------
-$(function () {
-  if ($(window).width() < 750) {
-    $('a').tooltip('destroy');
-    $('i').tooltip('destroy');
-  } else {
-    $('[data-toggle="tooltip"]').tooltip();
-  }
-})
-
-//--------------------------------------------------
 //  Document ready
 //--------------------------------------------------
 $(document).ready(function() {
+
+  // Start bootstrap tooltip just if it's not a touchable device
+  $(function () {
+    if ($(window).width() < 750) {
+      $('a').tooltip('destroy');
+      $('i').tooltip('destroy');
+    } else {
+      $('[data-toggle="tooltip"]').tooltip();
+    }
+  })
 
   // Add function when click on expand/close service description
   $('.services-row').on('click', function(event) {
