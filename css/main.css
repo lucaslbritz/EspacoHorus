@@ -403,6 +403,11 @@ a {
   text-decoration: none;
 }
 
+.contact-social-media + .tooltip > .tooltip-arrow,
+.contact-social-media + .tooltip > .tooltip-inner {
+  margin-bottom: 10px;
+}
+
 /*------------------------------------------------
 *   Location
 ------------------------------------------------*/
@@ -425,4 +430,14 @@ a {
   background-color: #252525;
   color: #777;
   padding-top: 20px;
+}
+
+.footer .contact-email,
+.footer .contact-email:hover {
+  text-decoration: none;
+  transform: none;
+}
+
+.footer .contact-email:hover {
+  color: #fff;
 }
