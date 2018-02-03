@@ -9,7 +9,10 @@ $(window).on('load', function() {
 //  Start bootstrap tooltip just if it's not a touchable device
 //--------------------------------------------------
 $(function () {
-  if (!('ontouchstart' in window)) {
+  if ($(window).width() < 750) {
+    $('a').tooltip('destroy');
+    $('i').tooltip('destroy');
+  } else {
     $('[data-toggle="tooltip"]').tooltip();
   }
 })
