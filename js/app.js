@@ -1,13 +1,26 @@
+//--------------------------------------------------
+//  Remove initial active class from navigation
+//--------------------------------------------------
+
 $(window).on('load', function() {
   $('.nav-item.active').removeClass('active');
 });
+
+//--------------------------------------------------
+//  Start bootstrap tooltip
+//--------------------------------------------------
 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 
+//--------------------------------------------------
+//  Document ready
+//--------------------------------------------------
+
 $(document).ready(function() {
 
+  // Add function when click on expand/close service description
   $('.services-row').on('click', function(event) {
     $(this).closest('li').find('.icon').toggleClass('clicked');
     $(this).closest('li').find('.services-description').fadeToggle('fast');
@@ -21,6 +34,7 @@ $(document).ready(function() {
              .tooltip('fixTitle').tooltip('show');
     }
 
+    // Turn visible and invisible "close all" service option
     if ($(this).closest('ul').find('.icon.clicked').length > 1) {
       $(this).closest('ul').find('.services-close-option').fadeIn('fast');
     } else {
@@ -28,6 +42,7 @@ $(document).ready(function() {
     }
   })
 
+  // Add function when click on "close all" service option
   $('.services-close-all').on('click', function(event) {
     $(this).closest('ul').find('.icon.clicked').removeClass('clicked');
     $(this).closest('ul').find('.services-description').fadeOut('fast');

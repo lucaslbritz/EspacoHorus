@@ -1,10 +1,18 @@
 /*************************************************
 *
-*   Espaço Hórus    -     Stylesheet
-*   Gray (lighter)  -     #ccc
-*   Gray            -     #aaa
-*   Gray (medium)   -     #333
-*   Gray (darker)   -     #212121
+*   Espaço Hórus      -     Stylesheet
+*   White             -     #fff
+*   Blue              -     #23527c
+*   Gray #1 (Lighter) -     #ccc
+*   Gray #2           -     #c5c5c5
+*   Gray #3           -     #bbb
+*   Gray #4           -     #b5b5b5
+*   Gray #5           -     #aaa
+*   Gray #6           -     #a5a5a5
+*   Gray #7           -     #777
+*   Gray #8           -     #333
+*   Gray #9 (Darker)  -     #252525
+*   Black             -     #000
 *
 *************************************************/
 
@@ -24,25 +32,9 @@ html, body {
           user-select: none;
 }
 
-h1, h2, h3, h4 {
-
-}
-
 ol, ul {
   padding: 0;
   list-style-type: none;
-}
-
-li {
-
-}
-
-p {
-
-}
-
-a {
-
 }
 
 /*------------------------------------------------
@@ -83,7 +75,7 @@ a {
 }
 
 .header h3 {
-  color: #888;
+  color: #777;
   padding-top: 50px;
 }
 
@@ -108,12 +100,7 @@ a {
   padding-bottom: 20px;
 }
 
-.about h2,
-.services h2,
-.tattoo h2,
-.feedbacks h2,
-.contact h2,
-.location h2 {
+.about > .services > .tattoo > .feedbacks > .contact > .location + h2 {
   padding-bottom: 20px;
 }
 
@@ -253,7 +240,7 @@ a {
 }
 
 .right-div {
-  background-color: #212121;
+  background-color: #252525;
   color: #fff;
   display: table-cell;
   float: none;
@@ -275,7 +262,7 @@ a {
 }
 
 .carousel blockquote:before {
-  color: #7a7a7a;
+  color: #777;
   content: '\201C';
   display: block;
   font-size: 80px;
@@ -285,7 +272,7 @@ a {
 }
 
 .carousel blockquote cite {
-    color: #999999;
+    color: #aaa;
     display: block;
     font-size: 14px;
     margin-top: 5px;
@@ -332,7 +319,7 @@ a {
 }
 
 .contact-item {
-  border-right: #888 solid 1px;
+  border-right: #777 solid 1px;
   margin-bottom: -99999px;
   padding-bottom: 99999px;
 }
@@ -355,7 +342,7 @@ a {
 }
 
 .contact-email {
-  color: #888;
+  color: #777;
   display: inline-block;
   font-size: 16px;
   margin-bottom: 10px;
@@ -375,7 +362,7 @@ a {
 }
 
 .contact-social-media {
-  color: #888;
+  color: #777;
   font-size: 24px;
   margin: 10px 10px 30px 10px;
   transition: all 0.3s;
@@ -432,12 +419,15 @@ a {
   padding-top: 20px;
 }
 
-.footer .contact-email,
-.footer .contact-email:hover {
+.footer .contact-email {
   text-decoration: none;
   transform: none;
 }
 
+.footer + .contact-email:active,
+.footer .contact-email:focus,
 .footer .contact-email:hover {
   color: #fff;
+  text-decoration: none;
+  transform: none;
 }
