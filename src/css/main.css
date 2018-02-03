@@ -390,11 +390,6 @@ ol, ul {
   text-decoration: none;
 }
 
-.contact-social-media + .tooltip > .tooltip-arrow,
-.contact-social-media + .tooltip > .tooltip-inner {
-  margin-bottom: 10px;
-}
-
 /*------------------------------------------------
 *   Location
 ------------------------------------------------*/
