@@ -2,11 +2,26 @@ $(window).on('load', function() {
   $('.nav-item.active').removeClass('active');
 });
 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
 $(document).ready(function() {
 
   $('.services-row').on('click', function(event) {
     $(this).closest('li').find('.icon').toggleClass('clicked');
     $(this).closest('li').find('.services-description').fadeToggle('fast');
+
+    // Change message of description tooltip
+    console.log($(this).closest('li').find('.icon').tooltip().attr('data-original-title'));
+    if ($(this).closest('li').find('.icon').tooltip().attr('data-original-title') === 'Ver descrição') {
+      $(this).closest('li').find('.icon').tooltip().attr('data-original-title', 'Fechar descrição')
+             .tooltip('fixTitle').tooltip('show');
+    } else {
+      $(this).closest('li').find('.icon').tooltip().attr('data-original-title', 'Ver descrição')
+             .tooltip('fixTitle').tooltip('show');
+    }
+
     if ($(this).closest('ul').find('.icon.clicked').length > 1) {
       $(this).closest('ul').find('.services-close-option').fadeIn('fast');
     } else {
@@ -18,6 +33,7 @@ $(document).ready(function() {
     $(this).closest('ul').find('.icon.clicked').removeClass('clicked');
     $(this).closest('ul').find('.services-description').fadeOut('fast');
     $(this).closest('ul').find('.services-close-option').fadeOut('fast');
+    $(this).closest('ul').find('.icon').tooltip().attr('data-original-title', 'Ver descrição').tooltip('fixTitle');
   })
 
   // Smooth scrolling using jQuery easing
