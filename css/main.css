@@ -103,6 +103,7 @@ ol, ul {
 .about h2,
 .services h2,
 .tattoo h2,
+.place h2,
 .feedbacks h2,
 .contact h2,
 .location h2 {
@@ -171,6 +172,7 @@ ol, ul {
 
 .jumbotron p {
   font-size: 16px;
+  padding-top: 10px;
 }
 
 .services-description {
@@ -214,6 +216,34 @@ ol, ul {
 .tattoo-subtitle a:focus,
 .tattoo-subtitle a:hover {
   text-decoration: none;
+}
+
+/*------------------------------------------------
+*   Place
+------------------------------------------------*/
+
+.place {
+  align-items: center;
+  background-color: #b5b5b5;
+  padding: 50px 0 80px 0;
+}
+
+.place .item {
+  background-color: #b5b5b5;
+  height: 100vh;
+  min-height: 300px;
+}
+
+.place .carousel-inner > .item > img {
+  height: auto;
+  margin: 0 auto;
+  max-height: 500px;
+  width: auto;
+}
+
+.place .carousel-control {
+  background-image: none;
+  width: 5%;
 }
 
 /*------------------------------------------------
@@ -277,14 +307,14 @@ ol, ul {
 }
 
 .carousel blockquote cite {
-    color: #aaa;
-    display: block;
-    font-size: 14px;
-    margin-top: 5px;
+  color: #aaa;
+  display: block;
+  font-size: 14px;
+  margin-top: 5px;
 }
 
 .carousel blockquote cite:before {
-    content: "\2014 \2009";
+  content: "\2014 \2009";
 }
 
 /*------------------------------------------------
